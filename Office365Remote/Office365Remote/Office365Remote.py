@@ -6,7 +6,11 @@
 
 import subprocess
 import os
-#subprocess.call(["C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe", ".\"./GetCredential.ps1\";", "&hello"])
+#subprocess.call(["C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe", ".\"./GetCredential.ps1\";", "&hello"])
+#subprocess.call(["C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"])
 #from subprocess import check_output
 #check_output("dir", shell=True)
-os.system('powershell.exe')
+#os.system('cd /Windows')
+#os.system('powershell.exe') #This one works but in home directory
+subprocess.call("powershell.exe") #This one also work but in home directory
+os.system(".\GetCredential.ps1")
